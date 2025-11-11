@@ -122,9 +122,7 @@ void displayList() {
 // Main function with menu
 int main() {
     int choice, n, data, pos;
-
-    while (1) {
-        printf("\n-- Singly Linked List Operations --\n");
+    printf("\n-- Singly Linked List Operations --\n");
         printf("1. Create Linked List\n");
         printf("2. Insert at Beginning\n");
         printf("3. Insert at Any Position\n");
@@ -133,6 +131,9 @@ int main() {
         printf("6. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+
+    while (1) {
+        
 
         switch (choice) {
             case 1:
@@ -169,7 +170,12 @@ int main() {
 
             default:
                 printf("Invalid choice. Try again.\n");
+            
+
+            
         }
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
     }
 
     return 0;
